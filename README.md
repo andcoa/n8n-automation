@@ -32,4 +32,7 @@ Breakdown of the workflow:
 
 The workflow can be configured according to the type of alerts pulled from NixGuard and send emails to the analyst or update the SIEM based on the Network Analysis and Threat Detection parameters provided. For the Incident Response automation, two new blocks would be added:
 
+-	OpenAI Message Model: Write an Incident Response Plan based on Virus Total data.
+-	Edit Field Block: Summarize the Incident Response Plan and email it to the analyst.
+
 ![image](https://github.com/user-attachments/assets/90ca2736-f877-439b-a64d-4c88c7e4f27e)
