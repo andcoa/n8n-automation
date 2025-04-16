@@ -20,3 +20,16 @@ To build automated security workflows integrated with the NixGuard API to stream
 Built the following workflow to automate log analysis and fine tune alerting based on the findings.
 
 ![image](https://github.com/user-attachments/assets/8f61ff30-f43c-4b61-924a-1db6400be648)
+
+Breakdown of the workflow:
+-	Interval Trigger: Every minute the automation would be triggered to get data from NixGuard.
+-	HTTP Request: GET Request to get new Nix alerts.
+-	Function Block: Convert Nix data into proper format to be submitted into Virus Total or any repository.
+-	Virus Total: Submit the transformed data to Virus Total for analysis.
+-	Switch Block: Route Virus Total data based on parameters.
+-	Send Email: If Virus Total returns a positive value, the workflow would send an email to the analyst.
+-	HTTP Post: POST Request to send new details about the alert back into the SIEM.
+
+The workflow can be configured according to the type of alerts pulled from NixGuard and send emails to the analyst or update the SIEM based on the Network Analysis and Threat Detection parameters provided. For the Incident Response automation, two new blocks would be added:
+
+![image](https://github.com/user-attachments/assets/90ca2736-f877-439b-a64d-4c88c7e4f27e)
