@@ -17,7 +17,7 @@ To build automated security workflows integrated with the NixGuard API to stream
 
 ## Steps
 
-Built the following workflow to automate log analysis and fine tune alerting based on the findings.
+Built the following workflow to automate log analysis and fine tune alerts based on the findings.
 
 ![image](https://github.com/user-attachments/assets/8f61ff30-f43c-4b61-924a-1db6400be648)
 
