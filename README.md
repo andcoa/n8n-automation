@@ -1,4 +1,4 @@
-# n8n automation
+# NixGuard SIEM automation
 
 ## Objective
 
